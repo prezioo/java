@@ -30,3 +30,7 @@ const akapit =document.createElement('p');
 akapit.innerHTML = "kebab na frytkach";
 console.log({akapit});
 cztery.appendChild(akapit);
+//6
+const piec = document.querySelector("section.side_column h1");
+console.log(piec)
+piec[1].remove(;)
