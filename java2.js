@@ -11,8 +11,28 @@ dwa.addEventListener("click", function(){
 });
 console.log(dwa);
 //3
-const batont = document.querySelector("#baton3");
-batont.addEventListener("click", function(){
-    const dive =document.querySelectorAll('#diw1');
-    console.log(dive)
+document.querySelector("#baton3").addEventListener("click", function (){
+    const tre = document.querySelector("#diw1");
+    const tra = tre.querySelectorAll("*");
+    console.log(tra);
+
+    for (const el of tra) {
+        if (el.tagName === "STRONG") {
+            el.style.border = "10px dotted green"
+        }
+    }
+})
+//4
+document.querySelector("#z4").addEventListener("click", function (){
+    alert(document.querySelector("#p4").getAttribute('title'));
+
+})
+
+//5
+const piate = document.querySelector("#zad5")
+piate.addEventListener("click", function() {
+    const piece = document.querySelector("#zad5");
+    piece.setAttribute('cos', 'rtl');
+    console.log(piece);
 });
+//6
